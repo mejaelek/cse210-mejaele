@@ -1,4 +1,4 @@
-class Address
+internal class Address
 {
     private string _street;S
     private string _city;
@@ -25,7 +25,7 @@ class Address
 }
 
 
-class Customer
+internal class Customer
 {
     private string _name;
     private Address _address;
@@ -48,7 +48,7 @@ class Customer
 }
 
 
-class Product
+internal class Product
 {
     private string _name;
     private string _productId;
@@ -74,7 +74,7 @@ class Product
     }
 }
 
-class Order
+internal class Order
 {
     private Customer _customer;
     private List<Product> _products;
@@ -108,9 +108,9 @@ class Order
     }
 }
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         // First order
         Address address1 = new Address("123 Main St", "New York", "NY", "USA");
